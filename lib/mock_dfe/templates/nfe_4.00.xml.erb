@@ -1,0 +1,25 @@
+<nfeProc versao="<%= @params["nfeProc"]["_versao"] %>" xmlns="<%= @params["nfeProc"]["_xmlns"] %>">
+    <NFe xmlns="<%= @params["nfeProc"]["NFe"]["_xmlns"] %>">
+        <% inf_nfe = @params["nfeProc"]["NFe"]["infNFe"]%>
+        <infNFe Id="<%= inf_nfe["_Id"] %>" versao="<%= inf_nfe["_versao"]%>">
+            <ide> <%= inf_nfe["ide"].to_xml %> </ide>
+            <emit> <%= inf_nfe["emit"].to_xml %> </emit>
+            <dest> <%= inf_nfe["dest"].to_xml %> </dest>
+            <det nItem=<%= inf_nfe["det"]["_nItem"] %> >
+                <%det = inf_nfe["det"] %>
+                <prod> <%= det["prod"].to_xml %> </prod>
+                <imposto> <%= det["imposto"].to_xml %> </imposto>
+                <infAdProd> <%= det["infAdProd"] %> </infAdProd>
+            </det>
+            <total> <%= inf_nfe["total"].to_xml %> </total>
+            <transp> <%= inf_nfe["transp"].to_xml %> </transp>
+            <cobr> <%= inf_nfe["cobr"].to_xml %> </cobr>
+            <pag> <%= inf_nfe["pag"].to_xml %> </pag>
+            <infAdic> <%= inf_nfe["infAdic"].to_xml %> </infAdic>
+        </infNFe>
+    </NFe>
+    <% prot_nfe = @params["nfeProc"]["protNFe"]%>
+    <protNFe versao="<%= prot_nfe["_versao"]%>" xmlns="<%= prot_nfe["_xmlns"]%>">
+        <%= prot_nfe.to_xml %>
+    </protNFe>
+</nfeProc>
