@@ -5,7 +5,7 @@
             <ide> <%= inf_nfe["ide"].to_xml %> </ide>
             <emit> <%= inf_nfe["emit"].to_xml %> </emit>
             <dest> <%= inf_nfe["dest"].to_xml %> </dest>
-            <det nItem=<%= inf_nfe["det"]["_nItem"] %> >
+            <det nItem="<%= inf_nfe["det"]["_nItem"] %>" >
                 <%det = inf_nfe["det"] %>
                 <prod> <%= det["prod"].to_xml %> </prod>
                 <imposto> <%= det["imposto"].to_xml %> </imposto>

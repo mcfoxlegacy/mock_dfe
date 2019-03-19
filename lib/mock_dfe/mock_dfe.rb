@@ -2,7 +2,7 @@ module MockDfe
   # Your code goes here...
   class Nfe
     def self.render(version = 'default')
-      template = self.render_template(version)
+      template = render_template(version)
       generate_xml(template)
     end
 

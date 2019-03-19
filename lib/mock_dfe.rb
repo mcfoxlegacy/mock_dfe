@@ -1,7 +1,6 @@
 require_relative 'mock_dfe/version'
 require 'json'
 require 'faker'
-require 'pry'
 require 'erb'
 require_relative 'mock_dfe/nfe_400.rb'
 require_relative 'mock_dfe/mock_dfe.rb'

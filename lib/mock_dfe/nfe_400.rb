@@ -1,7 +1,6 @@
+# template for NFe 4.00
 class Nfe400
-
   attr_reader :emit_date, :cUF, :AAMM, :CNPJ, :mod, :serie, :nNF, :tpEmis, :cNF, :cDV, :chave
-  
 
   def initialize
     @emit_date = DateTime.parse(Faker::Date.backward(1825).to_s)

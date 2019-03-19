@@ -38,4 +38,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "pry-nav"
   spec.add_dependency 'faker', '~> 1.9'
+  spec.add_dependency 'nokogiri', '~> 1.6'
 end
