@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["carlao_epalha@hotmail.com"]
 
   spec.summary       = %q{Generates Mock DFe data.}
-  spec.description   = %q{Generate Xml examples of different brazilian tax documents. }
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.description   = %q{Generates Xml examples of different Brazilian tax documents. }
+  spec.homepage      = "https://github.com/taxweb/mock_dfe"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
