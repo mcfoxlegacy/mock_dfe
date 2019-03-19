@@ -1,21 +1,34 @@
 module MockDfe
   # Your code goes here...
   class Nfe
-    def self.render(version = 'default')
-      template = render_template(version)
-      generate_xml(template)
-    end
+    class << self
+      def render(version = 'default')
+        template = render_template(version)
+        generate_xml(template)
+      end
 
-    def self.render_template(version)
-      @key_fields = Nfe400.new
-      json_erb = File.read('./lib/mock_dfe/templates/nfe_4.00.json.erb')
-      ERB.new(json_erb).result(binding)
-    end
+      private
 
-    def self.generate_xml(template)
-      @params = JSON.parse(template)
-      xml = File.read('./lib/mock_dfe/templates/nfe_4.00.xml.erb')
-      ERB.new(xml).result(binding)
+      def render_template(version)
+        case version
+        when '4.00', 'default'
+          @key_fields = Nfe400.new
+          json_erb = File.read('./lib/mock_dfe/templates/nfe_4.00.json.erb')
+        else
+          raise "There are no templates for NFe #{version}."
+        end
+        load_erb(json_erb)
+      end
+
+      def generate_xml(template)
+        @params = JSON.parse(template)
+        xml = File.read('./lib/mock_dfe/templates/nfe_4.00.xml.erb')
+        load_erb(xml)
+      end
+
+      def load_erb(template)
+        ERB.new(template).result(binding)
+      end
     end
   end
 end

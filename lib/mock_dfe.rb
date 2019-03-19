@@ -1,9 +1,11 @@
-require_relative 'mock_dfe/version'
 require 'json'
 require 'faker'
 require 'erb'
-require_relative 'mock_dfe/nfe_400.rb'
-require_relative 'mock_dfe/mock_dfe.rb'
+
+Dir['./lib/mock_dfe/dfes/*.rb'].each { |file| require file }
+
+require_relative 'mock_dfe/version'
+require_relative 'mock_dfe/mock_dfe'
 
 # method injection on the class Hash
 class Hash
