@@ -1,0 +1,222 @@
+{
+    "nfeProc": {
+        "NFe": {
+            "infNFe": {
+                "ide": {
+                    "cUF": "<%= @key_fields.cUF %>",
+                    "cNF": "<%= @key_fields.cNF %>",
+                    "natOp": "<%= Faker::Lorem.sentence %>",
+                    "mod": "<%= @key_fields.mod %>",
+                    "serie": "<%= @key_fields.serie %>",
+                    "nNF": "<%= @key_fields.nNF %>",
+                    "dhEmi": "<%= @key_fields.emit_date%>",
+                    "dhSaiEnt": "<%= @key_fields.emit_date%>",
+                    "tpNF": "<%= Faker::Number.digit %>",
+                    "idDest": "<%= Faker::Number.digit %>",
+                    "cMunFG": "<%= Faker::Number.number(7) %>",
+                    "tpImp": "<%= Faker::Number.digit %>",
+                    "tpEmis": "<%= @key_fields.tpEmis %>",
+                    "cDV": "<%= @key_fields.cDV %>",
+                    "tpAmb": "<%= Faker::Number.digit %>",
+                    "finNFe": "<%= Faker::Number.digit %>",
+                    "indFinal": "<%= Faker::Number.digit %>",
+                    "indPres": "<%= Faker::Number.digit %>",
+                    "procEmi": "<%= Faker::Number.digit %>",
+                    "verProc": "<%= Faker::Lorem.word %>"
+                },
+                "emit": {
+                    <% nome = Faker::Company.name %>
+                    "CNPJ": "<%= @key_fields.CNPJ %>",
+                    "xNome": "<%= nome %>",
+                    "xFant": "<%= nome %>",
+                    "enderEmit": {
+                        "xLgr": "<%= Faker::Address.street_name %>",
+                        "nro": "<%= Faker::Number.number(3) %>",
+                        "xBairro": "<%= Faker::Address.community %>>",
+                        "cMun": "<%= Faker::Number.number(7) %>",
+                        "xMun": "<%= Faker::Address.city %>",
+                        "UF": "<%= Faker::Address.state_abbr %>",
+                        "CEP": "<%= Faker::Number.number(8) %>",
+                        "cPais": "<%= Faker::Number.number(4) %>",
+                        "xPais": "<%= Faker::Address.country %>",
+                        "fone": "<%= Faker::Number.number(10) %>"
+                    },
+                    "IE": "<%= Faker::Number.number(8) %>",
+                    "CRT": "<%= Faker::Number.digit %>"
+                },
+                "dest": {
+                    <% nome = Faker::Company.name %>
+                    "CNPJ": "<% Faker::Company.brazilian_company_number %>",
+                    "xNome": "<%= nome %>",
+                    "enderDest": {
+                        "xLgr": "<%= Faker::Address.street_name %>",
+                        "nro": "<%= Faker::Number.number(3) %>",
+                        "xBairro": "<%= Faker::Address.community %>>",
+                        "cMun": "<%= Faker::Number.number(7) %>",
+                        "xMun": "<%= Faker::Address.city %>",
+                        "UF": "<%= Faker::Address.state_abbr %>",
+                        "CEP": "<%= Faker::Number.number(8) %>",
+                        "cPais": "<%= Faker::Number.number(4) %>",
+                        "xPais": "<%= Faker::Address.country %>",
+                        "fone": "<%= Faker::Number.number(10) %>"
+                    },
+                    "indIEDest": "<%= Faker::Number.digit %>",
+                    "IE": "<%= Faker::Number.number(8) %>",
+                    "email": "<%= Faker::Internet.email %>"
+                },
+                "det": {
+                    "prod": {
+                        "cProd": "<%= Faker::Number.number(6) %>",
+                        "cEAN": "<%= Faker::Lorem.sentence %>",
+                        "xProd": "<%= Faker::Lorem.sentence %>",
+                        "NCM": "<%= Faker::Number.number(8) %>",
+                        "CEST": "<%= Faker::Number.number(7) %>",
+                        "CFOP": "<%= Faker::Number.number(4) %>",
+                        "uCom": "<%= Faker::Lorem.characters(2).upcase %>",
+                        "qCom": "<%= Faker::Number.decimal(1, 4) %>",
+                        "vUnCom": "<%= Faker::Number.decimal(4, 10) %>",
+                        "vProd": "<%= Faker::Number.decimal(4, 2) %>",
+                        "cEANTrib": "<%= Faker::Lorem.words(2).join(' ') %>",
+                        "uTrib": "<%= Faker::Lorem.characters(2).upcase %>",
+                        "qTrib": "<%= Faker::Number.decimal(1, 4) %>",
+                        "vUnTrib": "<%= Faker::Number.positive %>",
+                        "indTot": "<%= Faker::Number.digit %>",
+                        "nFCI": "<%= Faker::Lorem.sentence %>",
+                        "comb": {
+                            "cProdANP": "<%= Faker::Number.number(9) %>",
+                            "descANP": "<%= Faker::Lorem.word %>",
+                            "qTemp": "<%= Faker::Number.decimal(1, 4) %>",
+                            "UFCons": "<%= Faker::Address.state_abbr %>"
+                        }
+                    },
+                    "imposto": {
+                        "vTotTrib": "<%= Faker::Number.decimal(4, 2) %>",
+                        "ICMS": {
+                            "ICMS00": {
+                                "orig": "<%= Faker::Number.digit %>",
+                                "CST": "<%= Faker::Number.number(2) %>",
+                                "modBC": "<%= Faker::Number.digit %>",
+                                "vBC": "<%= Faker::Number.decimal(4, 2) %>",
+                                "pICMS": "<%= Faker::Number.decimal(2) %>",
+                                "vICMS": "<%= Faker::Number.decimal(4, 2) %>",
+                                "pFCP": "<%= Faker::Number.decimal(1, 2) %>",
+                                "vFCP": "<%= Faker::Number.decimal(3, 2) %>"
+                            }
+                        },
+                        "IPI": {
+                            "cEnq": "<%= Faker::Number.number(3) %>",
+                            "IPITrib": {
+                                "CST": "<%= Faker::Number.number(2) %>",
+                                "vBC": "<%= Faker::Number.decimal(1, 2) %>",
+                                "pIPI": "<%= Faker::Number.decimal(1, 2) %>",
+                                "vIPI": "<%= Faker::Number.decimal(1, 2) %>"
+                            }
+                        },
+                        "PIS": {
+                            "PISAliq": {
+                                "CST": "<%= Faker::Number.number(2) %>",
+                                "vBC": "<%= Faker::Number.decimal(4, 2) %>",
+                                "pPIS": "<%= Faker::Number.decimal(1, 2) %>",
+                                "vPIS": "<%= Faker::Number.decimal(3, 2) %>"
+                            }
+                        },
+                        "COFINS": {
+                            "COFINSAliq": {
+                                "CST": "<%= Faker::Number.number(2) %>",
+                                "vBC": "<%= Faker::Number.decimal(4, 2) %>",
+                                "pCOFINS": "<%= Faker::Number.decimal(1, 2) %>",
+                                "vCOFINS": "<%= Faker::Number.decimal(3, 2) %>"
+                            }
+                        }
+                    },
+                    "infAdProd": "<%= Faker::Lorem.paragraph %>",
+                    "_nItem": "1"
+                },
+                "total": {
+                    "ICMSTot": {
+                        "vBC": "<%= Faker::Number.decimal(4, 2) %>",
+                        "vICMS": "<%= Faker::Number.decimal(4, 2) %>",
+                        "vICMSDeson": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vFCP": "<%= Faker::Number.decimal(3, 2) %>",
+                        "vBCST": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vST": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vFCPST": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vFCPSTRet": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vProd": "<%= Faker::Number.decimal(4, 2) %>",
+                        "vFrete": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vSeg": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vDesc": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vII": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vIPI": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vIPIDevol": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vPIS": "<%= Faker::Number.decimal(3, 2) %>",
+                        "vCOFINS": "<%= Faker::Number.decimal(3, 2) %>",
+                        "vOutro": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vNF": "<%= Faker::Number.decimal(4, 2) %>",
+                        "vTotTrib": "<%= Faker::Number.decimal(4, 2) %>"
+                    }
+                },
+                "transp": {
+                    "modFrete": "<%= Faker::Number.digit %>",
+                    "transporta": {
+                        "CNPJ": "<%= @key_fields.CNPJ %>",
+                        "xNome": "<%= Faker::Company.name %>",
+                        "IE": "<%= Faker::Number.number(8) %>",
+                        "xEnder": "<%= Faker::Address.street_address %>",
+                        "xMun":  "<%= Faker::Address.city %>",
+                        "UF":  "<%= Faker::Address.state_abbr %>"
+                    },
+                    "vol": {
+                        "qVol": "<%= Faker::Number.digit %>",
+                        "esp": "VOLUME",
+                        "nVol": "<%= Faker::Number.digit %>",
+                        "pesoL": "<%= Faker::Number.decimal(3) %>",
+                        "pesoB": "<%= Faker::Number.decimal(3) %>"
+                    }
+                },
+                "cobr": {
+                    "fat": {
+                        "nFat": "<%= Faker::Number.number(6) %>",
+                        "vOrig": "<%= Faker::Number.decimal(4, 2) %>",
+                        "vDesc": "<%= Faker::Number.decimal(1, 2) %>",
+                        "vLiq": "<%= Faker::Number.decimal(4, 2) %>"
+                    },
+                    "dup": {
+                        "nDup": "<%= Faker::Number.number(3) %>",
+                        "dVenc": "<%= Faker::Date.backward(1825).strftime('%Y-%m-%d') %>",
+                        "vDup": "<%= Faker::Number.decimal(4, 2) %>"
+                    }
+                },
+                "pag": {
+                    "detPag": {
+                        "tPag": "<%= Faker::Number.number(2) %>",
+                        "vPag": "<%= Faker::Number.decimal(4, 2) %>"
+                    }
+                },
+                "infAdic": {
+                    "infAdFisco": "<%= Faker::Lorem.sentence %>",
+                    "infCpl": "<%= Faker::Lorem.paragraph %>"
+                },
+                "_Id": "NFe<%=@key_fields.chave%>",
+                "_versao": "4.00"
+            },
+            "_xmlns": "http://www.portalfiscal.inf.br/nfe"
+        },
+        "protNFe": {
+            "infProt": {
+                "tpAmb": "<%= Faker::Number.digit %>",
+                "verAplic": "<%= Faker::Alphanumeric.alphanumeric(16).upcase %>",
+                "chNFe": "<%= @key_fields.chave %>",
+                "dhRecbto": "2019-01-28T12:02:56-02:00",
+                "nProt": "<%= Faker::Number.number(15) %>",
+                "digVal": "<%= Faker::Alphanumeric.alphanumeric(29) %>",
+                "cStat": "<%= Faker::Number.number(3) %>",
+                "xMotivo": "Autorizado o uso da NF-e"
+            },
+            "_xmlns": "http://www.portalfiscal.inf.br/nfe",
+            "_versao": "4.00"
+        },
+        "_xmlns": "http://www.portalfiscal.inf.br/nfe",
+        "_versao": "4.00"
+    }
+}

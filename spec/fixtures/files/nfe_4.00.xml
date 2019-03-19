@@ -1,0 +1,212 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe Id="NFe50160792842162000438550020509676771460388515" versao="4.00">
+            <ide>
+                <cUF>50</cUF>
+                <cNF>46038851</cNF>
+                <natOp>Aut ex molestiae cum.</natOp>
+                <mod>55</mod>
+                <serie>002</serie>
+                <nNF>050967677</nNF>
+                <dhEmi>2016-07-19T00:00:00+00:00</dhEmi>
+                <dhSaiEnt>2016-07-19T00:00:00+00:00</dhSaiEnt>
+                <tpNF>3</tpNF>
+                <idDest>4</idDest>
+                <cMunFG>3912533</cMunFG>
+                <tpImp>8</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>5</cDV>
+                <tpAmb>9</tpAmb>
+                <finNFe>1</finNFe>
+                <indFinal>5</indFinal>
+                <indPres>7</indPres>
+                <procEmi>2</procEmi>
+                <verProc>in</verProc>
+            </ide>
+            <emit>
+                <CNPJ>92842162000438</CNPJ>
+                <xNome>Dietrich Group</xNome>
+                <xFant>Dietrich Group</xFant>
+                <enderEmit>
+                    <xLgr>Schuppe Pine</xLgr>
+                    <nro>642</nro>
+                    <xBairro>Pine Court></xBairro>
+                    <cMun>2201248</cMun>
+                    <xMun>South Daltonfort</xMun>
+                    <UF>KS</UF>
+                    <CEP>78157713</CEP>
+                    <cPais>2926</cPais>
+                    <xPais>Nepal</xPais>
+                    <fone>5883693890</fone>
+                </enderEmit>
+                <IE>55289436</IE>
+                <CRT>7</CRT>
+            </emit>
+            <dest>
+                <CNPJ></CNPJ>
+                <xNome>Jast, Pacocha and Bashirian</xNome>
+                <enderDest>
+                    <xLgr>Rupert Fork</xLgr>
+                    <nro>596</nro>
+                    <xBairro>Summer Acres></xBairro>
+                    <cMun>8991810</cMun>
+                    <xMun>Derickville</xMun>
+                    <UF>DE</UF>
+                    <CEP>43859700</CEP>
+                    <cPais>4358</cPais>
+                    <xPais>Papua New Guinea</xPais>
+                    <fone>1960239633</fone>
+                </enderDest>
+                <indIEDest>0</indIEDest>
+                <IE>57936465</IE>
+                <email>lester@hegmann.com</email>
+            </dest>
+            <det nItem=1>
+
+                <prod>
+                    <cProd>249642</cProd>
+                    <cEAN>Nobis aut voluptatem occaecati.</cEAN>
+                    <xProd>Commodi laboriosam accusantium atque.</xProd>
+                    <NCM>36859020</NCM>
+                    <CEST>5775001</CEST>
+                    <CFOP>5985</CFOP>
+                    <uCom>I6</uCom>
+                    <qCom>6.0198</qCom>
+                    <vUnCom>5538.0794631377</vUnCom>
+                    <vProd>2732.09</vProd>
+                    <cEANTrib>delectus voluptas</cEANTrib>
+                    <uTrib>UR</uTrib>
+                    <qTrib>6.0676</qTrib>
+                    <vUnTrib>715.8687236950358</vUnTrib>
+                    <indTot>1</indTot>
+                    <nFCI>Cupiditate maxime praesentium error.</nFCI>
+                    <comb>
+                        <cProdANP>982170155</cProdANP>
+                        <descANP>quis</descANP>
+                        <qTemp>4.0314</qTemp>
+                        <UFCons>AL</UFCons>
+                    </comb>
+                </prod>
+                <imposto>
+                    <vTotTrib>9875.03</vTotTrib>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>9</orig>
+                            <CST>80</CST>
+                            <modBC>0</modBC>
+                            <vBC>4513.07</vBC>
+                            <pICMS>56.02</pICMS>
+                            <vICMS>3721.01</vICMS>
+                            <pFCP>9.08</pFCP>
+                            <vFCP>940.03</vFCP>
+                        </ICMS00>
+                    </ICMS>
+                    <IPI>
+                        <cEnq>299</cEnq>
+                        <IPITrib>
+                            <CST>63</CST>
+                            <vBC>7.02</vBC>
+                            <pIPI>6.03</pIPI>
+                            <vIPI>6.05</vIPI>
+                        </IPITrib>
+                    </IPI>
+                    <PIS>
+                        <PISAliq>
+                            <CST>80</CST>
+                            <vBC>1610.04</vBC>
+                            <pPIS>9.05</pPIS>
+                            <vPIS>980.03</vPIS>
+                        </PISAliq>
+                    </PIS>
+                    <COFINS>
+                        <COFINSAliq>
+                            <CST>43</CST>
+                            <vBC>5305.04</vBC>
+                            <pCOFINS>5.09</pCOFINS>
+                            <vCOFINS>882.09</vCOFINS>
+                        </COFINSAliq>
+                    </COFINS>
+                </imposto>
+                <infAdProd> Eum possimus ea. Fugiat ut libero. Et repellendus maxime. </infAdProd>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>7826.07</vBC>
+                    <vICMS>1152.06</vICMS>
+                    <vICMSDeson>9.05</vICMSDeson>
+                    <vFCP>569.09</vFCP>
+                    <vBCST>6.09</vBCST>
+                    <vST>3.02</vST>
+                    <vFCPST>1.02</vFCPST>
+                    <vFCPSTRet>8.03</vFCPSTRet>
+                    <vProd>6713.06</vProd>
+                    <vFrete>6.02</vFrete>
+                    <vSeg>7.03</vSeg>
+                    <vDesc>7.07</vDesc>
+                    <vII>5.02</vII>
+                    <vIPI>2.02</vIPI>
+                    <vIPIDevol>0.04</vIPIDevol>
+                    <vPIS>909.06</vPIS>
+                    <vCOFINS>259.06</vCOFINS>
+                    <vOutro>3.02</vOutro>
+                    <vNF>1529.01</vNF>
+                    <vTotTrib>1248.04</vTotTrib>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>4</modFrete>
+                <transporta>
+                    <CNPJ>92842162000438</CNPJ>
+                    <xNome>McGlynn-Corkery</xNome>
+                    <IE>65860988</IE>
+                    <xEnder>950 Bernhard Tunnel</xEnder>
+                    <xMun>Romaguerafort</xMun>
+                    <UF>AK</UF>
+                </transporta>
+                <vol>
+                    <qVol>9</qVol>
+                    <esp>VOLUME</esp>
+                    <nVol>3</nVol>
+                    <pesoL>400.07</pesoL>
+                    <pesoB>327.02</pesoB>
+                </vol>
+            </transp>
+            <cobr>
+                <fat>
+                    <nFat>114640</nFat>
+                    <vOrig>5113.01</vOrig>
+                    <vDesc>6.06</vDesc>
+                    <vLiq>7250.07</vLiq>
+                </fat>
+                <dup>
+                    <nDup>132</nDup>
+                    <dVenc>2014-05-31</dVenc>
+                    <vDup>5401.03</vDup>
+                </dup>
+            </cobr>
+            <pag>
+                <detPag>
+                    <tPag>95</tPag>
+                    <vPag>9472.06</vPag>
+                </detPag>
+            </pag>
+            <infAdic>
+                <infAdFisco>Necessitatibus aut labore nobis.</infAdFisco>
+                <infCpl>Itaque quo quod. Magni eius occaecati. Ad voluptatem sunt.</infCpl>
+            </infAdic>
+        </infNFe>
+    </NFe>
+
+    <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infProt>
+            <tpAmb>9</tpAmb>
+            <verAplic>GI9OII8TH1KLVC46</verAplic>
+            <chNFe>50160792842162000438550020509676771460388515</chNFe>
+            <dhRecbto>2019-01-28T12:02:56-02:00</dhRecbto>
+            <nProt>375466145040878</nProt>
+            <digVal>43uz30t8gflkhae891618yql6rrx6</digVal>
+            <cStat>439</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>

@@ -4,9 +4,9 @@ RSpec.describe MockDfe do
   end
 
   it "does something useful" do
-    expect(MockDfe::Dfe.render('nfe')).to include("<nfeProc versao=")
-    expect(MockDfe::Dfe.render('nfe')).to include("<NFe xmlns=")
-    expect(MockDfe::Dfe.render('nfe')).to include("<infNFe Id=")
-    expect(MockDfe::Dfe.render('nfe')).to include("<protNFe versao=")
+    expect(MockDfe::Nfe.render('nfe')).to include("<nfeProc versao=")
+    expect(MockDfe::Nfe.render('nfe')).to include("<NFe xmlns=")
+    expect(MockDfe::Nfe.render('nfe')).to include("<infNFe Id=")
+    expect(MockDfe::Nfe.render('nfe')).to include("<protNFe versao=")
   end
 end
