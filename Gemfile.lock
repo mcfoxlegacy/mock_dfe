@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mock_dfe (0.1.0)
+    mock_dfe (0.1.1)
       cpf_cnpj (~> 0.2.0)
       faker (~> 1.9, >= 1.9.0)
 
