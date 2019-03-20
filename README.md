@@ -1,38 +1,44 @@
 # MockDfe
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mock_dfe`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Generates XML examples of different Brazilian tax documents with random data.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'mock_dfe'
+gem 'mock_dfe', :git => 'https://github.com/taxweb/mock_dfe.git', :branch => 'master'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install mock_dfe
-
 ## Usage
 
-TODO: Write usage instructions here
-
+```
+require 'mock_dfe'
+MockDfe::Nfe.render           #=> "Renders last version of NFe"
+MockDfe::Nfe.render('4.00')   #=> "Renders NFe version 4.00"
+```
+**Currently Available Documents and versions:**
+|DFe|Version|
+|:---:|:---:|
+|NFe  |4.00 |
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Todo:
+- [ ] Add other DFe's and its versions (Nfe 1.00, Cte, NFSe...)
+- [ ] Possibility of sending any params that will overwrite the randomly generated ones
+ 
+\* Do NOT forget to add tests update the documentation for every new development
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mock_dfe.
+Bug reports and pull requests are welcome on GitHub at https://github.com/taxweb/mock_dfe.
 
 ## License
 
