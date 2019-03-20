@@ -1,8 +1,9 @@
 require 'json'
 require 'faker'
+require 'cpf_cnpj'
 require 'erb'
 
-Dir['./lib/mock_dfe/dfes/*.rb'].each { |file| require file }
+Dir["#{File.expand_path("../../", __FILE__)}/lib/mock_dfe/dfes/*.rb"].each { |file| require file }
 
 require_relative 'mock_dfe/version'
 require_relative 'mock_dfe/mock_dfe'

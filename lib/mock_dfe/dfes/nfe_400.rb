@@ -6,7 +6,7 @@ class Nfe400
     @emit_date = DateTime.parse(Faker::Date.backward(1825).to_s)
     @cUF =  COD_DA_UF.values.sample
     @AAMM = @emit_date.strftime('%y%m')
-    @CNPJ = Faker::Company.brazilian_company_number
+    @CNPJ = CNPJ.generate
     @mod = '55'
     @serie = '002'
     @nNF = Faker::Number.between(1, 999_999_999).to_s.rjust(9, '0')

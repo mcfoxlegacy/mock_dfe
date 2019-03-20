@@ -46,7 +46,7 @@
                 },
                 "dest": {
                     <% nome = Faker::Company.name %>
-                    "CNPJ": "<% Faker::Company.brazilian_company_number %>",
+                    "CNPJ": "<% CNPJ.generate %>",
                     "xNome": "<%= nome %>",
                     "enderDest": {
                         "xLgr": "<%= Faker::Address.street_name %>",
@@ -205,11 +205,11 @@
         "protNFe": {
             "infProt": {
                 "tpAmb": "<%= Faker::Number.digit %>",
-                "verAplic": "<%= Faker::Alphanumeric.alphanumeric(16).upcase %>",
+                "verAplic": "<%= Faker::Lorem.characters(16).upcase %>",
                 "chNFe": "<%= @key_fields.chave %>",
                 "dhRecbto": "2019-01-28T12:02:56-02:00",
                 "nProt": "<%= Faker::Number.number(15) %>",
-                "digVal": "<%= Faker::Alphanumeric.alphanumeric(29) %>",
+                "digVal": "<%= Faker::Lorem.characters(29) %>",
                 "cStat": "<%= Faker::Number.number(3) %>",
                 "xMotivo": "Autorizado o uso da NF-e"
             },

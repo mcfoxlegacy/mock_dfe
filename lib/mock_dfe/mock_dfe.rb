@@ -1,5 +1,4 @@
 module MockDfe
-  # Your code goes here...
   class Nfe
     class << self
       def render(version = 'default')
@@ -13,7 +12,7 @@ module MockDfe
         case version
         when '4.00', 'default'
           @key_fields = Nfe400.new
-          json_erb = File.read('./lib/mock_dfe/templates/nfe_4.00.json.erb')
+          json_erb = File.read("#{File.expand_path("../../", __FILE__)}/mock_dfe/templates/nfe_4.00.json.erb")
         else
           raise "There are no templates for NFe #{version}."
         end
@@ -22,7 +21,7 @@ module MockDfe
 
       def generate_xml(template)
         @params = JSON.parse(template)
-        xml = File.read('./lib/mock_dfe/templates/nfe_4.00.xml.erb')
+        xml = File.read("#{File.expand_path("../../", __FILE__)}/mock_dfe/templates/nfe_4.00.xml.erb")
         load_erb(xml)
       end
 
