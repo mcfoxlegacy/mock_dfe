@@ -7,7 +7,7 @@ Generates XML examples of different Brazilian tax documents with random data.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'mock_dfe', :git => 'https://github.com/taxweb/mock_dfe.git', :branch => 'master'
+gem 'mock_dfe'
 ```
 
 And then execute:
@@ -22,9 +22,11 @@ MockDfe::Nfe.render           #=> "Renders last version of NFe"
 MockDfe::Nfe.render('4.00')   #=> "Renders NFe version 4.00"
 ```
 **Currently Available Documents and versions:**
+
 |DFe|Version|
 |:---:|:---:|
 |NFe  |4.00 |
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
